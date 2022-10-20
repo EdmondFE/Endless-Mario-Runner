@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Run</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/chat.js"></script>
+	<script type="module" src="/scripts/leaderboard.js"></script>
+	<style>
+		@font-face {
+			font-family: "Silkscreen-Regular";
+			src: url("fonts/Silkscreen-Regular.ttf") format("truetype");
+			src: url("fonts/Silkscreen-Bold.ttf") format("truetype");
+		}
+	</style>
+</head>
+<body>
+    <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
+	<script src="/scripts/game.js"></script>
+	<div id="game"></div>
+	<div id="side-tab">
+		<h1>Leaderboard</h1>
+		<div id="leaderboard"></div>
+		<h1>Chat</h1>
+        <h3>(<span id="connected"><%= count%></span>) people connected</h3>
+		<div id="chat-box"></div>
+		<form action="" method="post">
+			<input id="msg-input" type="text" placeholder="Chat with other players..." autocomplete="off">
+			<input  class="button-19" type="submit" value="Send">
+		</form>
+	</div>
+ 
+</body>
+</html>

@@ -1,0 +1,142 @@
+#side-tab{
+    width: 385px;
+    height: 700px;
+    border: 10px double rgb(196, 227, 75);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    padding: 10px;
+}
+#game{
+    display: inline-block;
+}
+canvas{
+    background-color: rgb(128, 180, 255 );
+}
+h1, h3{
+    font-family: Silkscreen-Regular;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    font-weight: bolder;
+}
+p{
+    font-size: 13pt;
+    color: white;
+    font-family: Silkscreen-Regular;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+span{
+    color: rgb(120, 120, 225);
+    font-family: Silkscreen-Regular;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+#leaderboard, #chat-box{
+    width: 100%;
+    border: 1px double black;
+    background-color: rgb(234, 215, 188);
+    box-shadow: inset 0px 0px 7px 8px lightslategray;
+    padding: 10px;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    text-align: left;
+    word-wrap: break-word;
+}
+#leaderboard::-webkit-scrollbar, #chat-box::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+#leaderboard{
+    height: 200px;
+}
+#chat-box{
+    height: 250px;
+}
+em{
+    display: block;
+    color: lightslategray;
+    font-family: Silkscreen-Regular;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(128, 180, 255);
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+body::-webkit-scrollbar{
+    display: none; /* for Chrome, Safari, and Opera */
+}
+input{
+    font-size: 11pt;
+    font-family: Silkscreen-Regular;
+    padding: 10px 20px 7px 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.button-19 {
+    font-family: Silkscreen-Regular;
+  appearance: button;
+  background-color: #1976a0;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
