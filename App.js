@@ -2,7 +2,8 @@ const e = require('express');
 const express = require('express');
 const app = express();
 const path = require("path");
-const server = app.listen(8000);
+const port = process.env.PORT || 8000;
+const server = app.listen(port);
 const io = require('socket.io')(server);
 app.use(express.static(path.join(__dirname, "./static")));//Express for static content
 app.set('views', path.join(__dirname, './views'));//EJS for dynamic content
